@@ -1,26 +1,32 @@
 # ragbit
-Seperate repo for lecture 11 - RAG in AI-OPS course
 
-### set up
+Separate repo for lecture 11 – RAG in the AI-OPS course.
+
+## Setup
+
+### 1. Initialize the project
+
+Create the root project (a workspace root without its own package):
 
 ```bash
-uv add --no-package --python 3.13
+uv init --no-package --python 3.13
 ```
 
-- packages for workspaces for dockerizing backend and frontend
+### 2. Create workspace packages
+
+Separate packages for the backend and frontend, so they can be dockerized independently:
+
 ```bash
-uv add --package backend
-uv add --package frontend
+uv init --package backend
+uv init --package frontend
 ```
 
-- skriv in i dependencies i respektive packages, samt i rotens pyproject.toml
+### 3. Add dependencies
+
+Add the dependencies in each package's `pyproject.toml`, and also in the root `pyproject.toml`.
+
+### 4. Install everything
 
 ```bash
 uv sync --all-packages
 ```
-
-#### Add data 
-- lägg till pdf givna pdf-filer till en mapp 'data' i backend/src/backend
-
-
-
