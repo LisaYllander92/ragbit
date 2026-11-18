@@ -19,4 +19,8 @@ uv add --package frontend
 uv sync --all-packages
 ```
 
+#### Add data 
+- lägg till pdf givna pdf-filer till en mapp 'data' i backend/src/backend
+
+
 
