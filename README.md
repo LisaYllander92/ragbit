@@ -1,6 +1,6 @@
 # ragbit
 
-Separate repo for lecture 11 – RAG in the AI-OPS course.
+Separate repo for lecture 11-12 – RAG and docerizing in the AI-OPS course.
 
 ## Setup
 
@@ -30,3 +30,6 @@ Add the dependencies in each package's `pyproject.toml`, and also in the root `p
 ```bash
 uv sync --all-packages
 ```
+
+# Dockerizing
+![](dockerize.png)
